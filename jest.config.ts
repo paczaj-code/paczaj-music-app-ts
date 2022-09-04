@@ -1,15 +1,15 @@
 module.exports = {
-  testEnvironment: 'node',
+  testEnvironment: "node",
   // roots: ['<rootDir>/src/'],
   transform: {
-    '^.+\\.tsx?$': 'ts-jest',
+    "^.+\\.tsx?$": "ts-jest",
   },
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   collectCoverage: true,
   collectCoverageFrom: [
-    'src/**/*.{js,jsx,ts,tsx}',
-    '!<rootDir>/node_modules/',
-    '!src/server.ts',
+    "src/**/*.{jsx,ts,tsx}",
+    "!<rootDir>/node_modules/",
+    // '!src/server.ts',
   ],
   verbose: true,
 };
